@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CAJAS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      padding: 30px;
+    }
+
+
+    .container {
+      margin-bottom: 40px;
+    }
+
+
+    .naranja  { background-color: #FF8000; }
+    .verde    { background-color: #1A7F7A; }
+    .vinotinto { background-color: #6B0F3A; }
+
+ 
+    #contenedor1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas:
+        "a b c";
+      gap: 10px;
+      width: 500px;
+      height: 200px;
+    }
+
+    #contenedor1 .a { grid-area: a; }
+    #contenedor1 .b { grid-area: b; }
+    #contenedor1 .c { grid-area: c; }
+
+
+    #contenedor2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "a b c"
+        "d b e"
+        "d f e";
+    gap: 10px;
+    width: 500px;
+    height: 250px;
+    }
+
+    #contenedor2 .a { grid-area: a; }
+    #contenedor2 .b { grid-area: b; }
+    #contenedor2 .c { grid-area: c; }
+    #contenedor2 .d { grid-area: d; }
+    #contenedor2 .e { grid-area: e; }
+    #contenedor2 .f { grid-area: f; }
+
+
+    #contenedor3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "a b c"
+        "a d c"
+        "e d f";
+    gap: 10px;
+    width: 500px;
+    height: 250px;
+    }
+
+    #contenedor3 .a { grid-area: a; }
+    #contenedor3 .b { grid-area: b; }
+    #contenedor3 .c { grid-area: c; }
+    #contenedor3 .d { grid-area: d; }
+    #contenedor3 .e { grid-area: e; }
+    #contenedor3 .f { grid-area: f; }
+
+  
+    #contenedor4 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas:
+        "a a b"
+        "c d d"
+        "e e f";
+      gap: 10px;
+      width: 500px;
+      height: 250px;
+    }
+
+    #contenedor4 .a { grid-area: a; }
+    #contenedor4 .b { grid-area: b; }
+    #contenedor4 .c { grid-area: c; }
+    #contenedor4 .d { grid-area: d; }
+    #contenedor4 .e { grid-area: e; }
+    #contenedor4 .f { grid-area: f; }
+
+    #contenedor5 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas:
+        "a b c"
+        "d e f"
+        "g h i";
+      gap: 10px;
+      width: 500px;
+      height: 220px;
+    }
+
+    #contenedor5 .a { grid-area: a; }
+    #contenedor5 .b { grid-area: b; }
+    #contenedor5 .c { grid-area: c; }
+    #contenedor5 .d { grid-area: d; }
+    #contenedor5 .e { grid-area: e; }
+    #contenedor5 .f { grid-area: f; }
+    #contenedor5 .g { grid-area: g; }
+    #contenedor5 .h { grid-area: h; }
+    #contenedor5 .i { grid-area: i; }
+  </style>
+</head>
+<body>
+    <h2>EJERCICIO DE CAJAS</h2>
+  <div class="container" id="contenedor1">
+    <div class="a naranja"></div>
+    <div class="b verde"></div>
+    <div class="c vinotinto"></div>
+  </div>
+
+  <div class="container" id="contenedor2">
+  <div class="a naranja"></div>
+  <div class="b naranja"></div>
+  <div class="c naranja"></div>
+  <div class="d verde"></div>
+  <div class="e vinotinto"></div>
+  <div class="f vinotinto"></div>
+</div>
+
+<div class="container" id="contenedor3">
+  <div class="a naranja"></div>
+  <div class="b naranja"></div>
+  <div class="c verde"></div>
+  <div class="d vinotinto"></div>
+  <div class="e vinotinto"></div>
+  <div class="f vinotinto"></div>
+</div>
+
+  <div class="container" id="contenedor4">
+    <div class="a naranja"></div>
+    <div class="b naranja"></div>
+    <div class="c verde"></div>
+    <div class="d verde"></div>
+    <div class="e vinotinto"></div>
+    <div class="f vinotinto"></div>
+  </div>
+
+  <div class="container" id="contenedor5">
+    <div class="a naranja"></div>
+    <div class="b naranja"></div>
+    <div class="c naranja"></div>
+    <div class="d verde"></div>
+    <div class="e verde"></div>
+    <div class="f verde"></div>
+    <div class="g vinotinto"></div>
+    <div class="h vinotinto"></div>
+    <div class="i vinotinto"></div>
+  </div>
+
+</body>
+</html>
+
+

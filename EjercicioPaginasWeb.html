@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño responsive</title>
+
+    <style>
+        
+
+        @media (min-width: 768px) and (max-width: 960px) {
+            .Contenedor {
+                display: block;
+            }
+            .Cuadro1, .Cuadro2 {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .Cuadro1 {
+         border: 2px solid rgba(22, 120, 157);   
+         background-color: rgba(207, 232, 220);
+         height: 250px;
+         width: 200px;
+         border-radius: 5px;
+         font-family: Arial, Helvetica, sans-serif;
+         font-size: 12px;
+         padding: 5px;
+        }
+
+        .Cuadro2 {
+         border: 2px solid rgba(22, 120, 157);   
+         background-color: rgba(207, 232, 220);
+         height:150px;
+         width: 700px;
+         align-items: right;
+         border-radius: 5px;
+         font-family: Arial, Helvetica, sans-serif;
+         font-size: 12px;
+        padding: 5px;
+        }
+
+       .Titulo1 {
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+       }
+       p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        justify-content: center;
+       }
+       .P1 {
+        max-width: 700px;
+       }
+
+        .Titulo2 {
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        .Contenedor {
+        display: grid;
+        grid-template-columns: 220px 1fr;
+        grid-template-rows: auto auto auto auto;
+        }
+            .Cuadro1 { grid-column: 1; grid-row: 1 / 3; }
+            .Titulo1 { grid-column: 2; grid-row: 1; } 
+            .P1      { grid-column: 2; grid-row: 2; }
+            .Título2 { grid-column: 1; grid-row: 3; } 
+            .Cuadro2 { grid-column: 2; grid-row: 4; } 
+            .P2     { grid-column: 1; grid-row: 4; }
+        
+        @media (min-width:961px) {
+
+            .Cuadro1 {
+                width: 920px;
+                height: 15px;
+                padding: 5px;
+                border-color: rgba(105, 194, 225);
+            }
+            .Cuadro2 {
+                width: 920px;
+                height: 15px;
+                padding: 5px;
+                border-color: rgba(105, 194, 225);
+            }
+            .Título2   {border-left: 2px solid #ccc;}
+
+            .Cuadro1 { grid-column: 1 / 3; grid-row: 1 ; }
+            .Titulo1 { grid-column: 2; grid-row: 2; } 
+            .P1      { grid-column: 2; grid-row: 3; }
+            .Título2 { grid-column: 1; grid-row: 2; } 
+            .Cuadro2 { grid-column: 1 / 3; grid-row: 4; } 
+            .P2     { grid-column: 1; grid-row: 3; }
+        })
+
+    </style>
+</head>
+<body>
+    <div class="Contenedor">
+        <div class="Cuadro1">This is my lovely blog</div>
+        <h3 class="Titulo1">My article</h3>
+        <p class="P1">Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc, at ultricies tellus laoreet sit amet. Sed auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet orci vel, viverra egestas ligula. Curabitur vehicula tellus neque, ac ornare ex malesuada et. In vitae convallis lacus. Aliquam erat volutpat. Suspendisse ac imperdiet turpis. Aenean finibus sollicitudin eros pharetra congue. Duis ornare egestas augue ut luctus. Proin blandit quam nec lacus varius commodo et a urna. Ut id ornare felis, eget fermentum sapien.
+            <br><br>
+        Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut, facilisis sed est. Nam id risus quis ante semper consectetur eget aliquam lorem. Vivamus tristique elit dolor, sed pretium metus suscipit vel. Mauris ultrices lectus sed lobortis finibus. Vivamus eu urna eget velit cursus viverra quis vestibulum sem. Aliquam tincidunt eget purus in interdum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+        <h3 class="Titulo2">Other things</h3>
+        <p class="P2">Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut, facilisis sed est.</p>
+        
+        <div class="Cuadro2">Contact me@mysite.com</div>
+    </div>
+
+</body>
+</html>
